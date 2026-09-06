@@ -1,0 +1,28 @@
+name: Production Readiness
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  readiness:
+    name: determine whether production is safe
+    runs-on: ubuntu-latest
+    steps:
+      - name: Collect confidence
+        shell: bash
+        run: |
+          echo 'confidence=99%'
+          echo 'evidence=not requested'
+          echo 'rollback=conceptual'
+
+      - name: Apply enterprise acceptance criteria
+        shell: bash
+        run: |
+          echo '::error title=Production detected::Deployment target appears to matter.'
+          echo 'Safety policy requires production to be hypothetical.'
+          exit 1
