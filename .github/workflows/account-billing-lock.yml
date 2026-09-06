@@ -1,0 +1,21 @@
+name: Account Billing Lock
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  billing:
+    name: The job was not started because your account is locked due to a billing issue.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Consult accounts receivable
+        shell: bash
+        run: |
+          echo '::error title=Billing issue::The job was not started because your account is locked due to a billing issue. '
+          echo 'The job was not started because your account is locked due to a billing issue. '
+          exit 1
