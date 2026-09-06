@@ -10,6 +10,14 @@
 
 *The natural home of `nu.mkv`.*
 
+[![Ceremonial CI](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/ceremonial-ci.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/ceremonial-ci.yml)
+[![Reality Compatibility](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/reality-compatibility.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/reality-compatibility.yml)
+[![Works On My Machine](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/works-on-my-machine.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/works-on-my-machine.yml)
+[![Production Readiness](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/production-readiness.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/production-readiness.yml)
+[![nu.mkv Codec Validation](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/nu-mkv-codec.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/nu-mkv-codec.yml)
+
+**Operational target: 5/5 workflows failing.** A green badge is a regression.
+
 </div>
 
 ---
@@ -30,7 +38,7 @@ Every layer is wrapped in enough legitimate enterprise jargon to sail through th
 
 ### Ceremonial CI/CD pipelines
 
-Green checkmarks build morale. Reality is strictly non-blocking.
+Green checkmarks build morale. Reality is strictly non-blocking. The repository therefore ships five independent workflows whose acceptance criterion is failure. If one turns green, investigate immediately.
 
 ### Uncompromising structural friction
 
@@ -75,6 +83,20 @@ nu nu.mkv
 ```
 
 Opening `nu.mkv` in a video player is left as an exercise for the reader, the codec authors, and whichever deity currently owns multimedia support.
+
+## Continuous disappointment
+
+The CI estate is intentionally diversified across five failure domains:
+
+| Workflow | Certified failure mode |
+|---|---|
+| Ceremonial CI | Tests 1–90 pass; test 91 asks whether anything works |
+| Reality Compatibility | Observed state disagrees with the preferred narrative |
+| Works On My Machine | GitHub's Windows runner is inexplicably not `WILLS-MACHINE` |
+| Production Readiness | Production exists and therefore cannot be considered safe |
+| `nu.mkv` Codec Validation | Type system collapses while deciding whether the file is shell or video |
+
+This is defense in depth, if one has a sufficiently relaxed definition of both words.
 
 ## By the numbers
 
@@ -127,6 +149,7 @@ The complete anonymized chronology lives in **[INCIDENTS.md](INCIDENTS.md)**.
 - If a path works on both Windows and POSIX, somebody has misunderstood it.
 - Generated files remain untouched because fear is a valid dependency-management strategy.
 - A green checkmark proves the icon-rendering pipeline is operational.
+- A green Actions badge means CI has failed its acceptance criteria.
 - The config still exists.
 - The config may even be correct.
 - Nobody currently asks the config.
@@ -135,13 +158,19 @@ The complete anonymized chronology lives in **[INCIDENTS.md](INCIDENTS.md)**.
 
 ```text
 .
+├── .github/workflows/
+│   ├── ceremonial-ci.yml          # discovers test 91
+│   ├── nu-mkv-codec.yml           # ontology gate
+│   ├── production-readiness.yml   # production is a blocker
+│   ├── reality-compatibility.yml  # narrative-driven testing
+│   └── works-on-my-machine.yml    # runner identity crisis
 ├── assets/
-│   ├── banner.svg       # same mistakes, different aesthetic
-│   └── social-card.svg  # premium cursed-repo marketing collateral
-├── INCIDENTS.md         # anonymized, real-dated archive
-├── make_chaos.sh        # enterprise ceremony runner
-├── nu.mkv               # shell? video? boundary problem.
-└── LICENSE              # astonishingly, the least controversial file
+│   ├── banner.svg                 # same mistakes, different aesthetic
+│   └── social-card.svg            # premium cursed-repo marketing collateral
+├── INCIDENTS.md                   # anonymized, real-dated archive
+├── make_chaos.sh                  # enterprise ceremony runner
+├── nu.mkv                         # shell? video? boundary problem.
+└── LICENSE                        # astonishingly, the least controversial file
 ```
 
 ## Support
