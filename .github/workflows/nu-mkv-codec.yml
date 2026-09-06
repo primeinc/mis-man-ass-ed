@@ -1,0 +1,28 @@
+name: nu.mkv Codec Validation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  codec:
+    name: determine whether nu.mkv is a shell or a video
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect extension
+        shell: bash
+        run: |
+          echo 'Container: Matroska (.mkv)'
+          echo 'Payload: suspiciously executable'
+          echo 'Shell: emotionally available'
+
+      - name: Resolve ontology
+        shell: bash
+        run: |
+          echo '::error title=Type system collapse::nu.mkv cannot simultaneously satisfy media and shell expectations.'
+          echo 'Mischief mismanaged.'
+          exit 1
