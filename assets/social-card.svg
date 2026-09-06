@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">mis-man-ass-ed social card</title>
+  <desc id="desc">Square neon developer meme card for mis-man-ass-ed.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#060812"/>
+      <stop offset="0.55" stop-color="#0c1025"/>
+      <stop offset="1" stop-color="#1a082a"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="0.45" stop-color="#ba70ff"/>
+      <stop offset="1" stop-color="#54e6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" rx="30" fill="url(#bg)"/>
+  <circle cx="960" cy="220" r="150" fill="#ff4fd8" opacity="0.16"/>
+  <path d="M0 930h1200" stroke="#54e6ff" stroke-opacity="0.13"/>
+
+  <text x="70" y="90" fill="#7d8fb9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="23" letter-spacing="5">SAME MISTAKES · DIFFERENT AESTHETIC</text>
+  <text x="70" y="250" fill="url(#neon)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="800" font-size="110">mis-man-ass-ed</text>
+  <text x="74" y="320" fill="#edf1ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="43">Mischief <tspan fill="#ff4fd8">mismanaged.</tspan></text>
+
+  <g transform="translate(70 395)">
+    <rect width="315" height="100" rx="18" fill="#11162c" stroke="#ff4fd8" stroke-opacity="0.7"/>
+    <text x="157" y="45" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24">90 ceremonial tests</text>
+    <text x="157" y="74" text-anchor="middle" fill="#8c9bc0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">confidence by repetition</text>
+  </g>
+
+  <g transform="translate(425 395)">
+    <rect width="315" height="100" rx="18" fill="#11162c" stroke="#54e6ff" stroke-opacity="0.7"/>
+    <text x="157" y="45" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24">nu.mkv inside</text>
+    <text x="157" y="74" text-anchor="middle" fill="#8c9bc0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">shell? video? yes.</text>
+  </g>
+
+  <g transform="translate(780 395)">
+    <rect width="315" height="100" rx="18" fill="#11162c" stroke="#9d70ff" stroke-opacity="0.7"/>
+    <text x="157" y="45" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24">works on my machine™</text>
+    <text x="157" y="74" text-anchor="middle" fill="#8c9bc0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">machine sold separately</text>
+  </g>
+
+  <g transform="translate(70 560)">
+    <rect width="650" height="285" rx="20" fill="#0b0f20" stroke="#54e6ff" stroke-opacity="0.35"/>
+    <text x="28" y="48" fill="#54e6ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24">$ git status</text>
+    <text x="28" y="90" fill="#95a8d2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">On branch main</text>
+    <text x="28" y="132" fill="#95a8d2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">nothing to commit,</text>
+    <text x="28" y="174" fill="#ff4fd8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">everything is a problem</text>
+    <text x="28" y="238" fill="#7b88a8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Windows Terminal Canary → Git Bash</text>
+    <text x="28" y="270" fill="#7b88a8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">→ Windows PowerShell → pwsh → hope</text>
+  </g>
+
+  <g transform="translate(770 575)">
+    <rect width="315" height="220" rx="26" fill="#151025" stroke="#ff4fd8" stroke-opacity="0.45"/>
+    <text x="157" y="62" text-anchor="middle" fill="#ff4fd8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="40">nu.mkv</text>
+    <text x="157" y="108" text-anchor="middle" fill="#d8def5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19">MAY CONTAIN</text>
+    <text x="157" y="138" text-anchor="middle" fill="#d8def5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19">UNSTABLE IDEAS</text>
+    <text x="157" y="184" text-anchor="middle" fill="#7f94c6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">reality not included</text>
+  </g>
+
+  <text x="70" y="970" fill="#eef3ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38">A highly questionable open source project.</text>
+  <text x="70" y="1035" fill="#7f94c6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24">The natural home of nu.mkv.</text>
+  <text x="70" y="1112" fill="url(#neon)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="32">STAR RESPONSIBLY.</text>
+</svg>

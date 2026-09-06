@@ -1,0 +1,18 @@
+#!/usr/bin/env nu
+
+# nu.mkv
+# A shell script wearing a media-container costume.
+# If your video player executes this, you have larger problems.
+
+def main [] {
+  print "mis-man-ass-ed"
+  print "Mischief mismanaged."
+  print ""
+  print "This file is valid text, valid nonsense, and emotionally valid Matroska."
+  print ""
+  print "Supported playback chain:"
+  print "  Windows Terminal Canary -> Git Bash -> Windows PowerShell -> pwsh -> nu"
+  print ""
+  print "All tests passed*"
+  print "* reality not included"
+}

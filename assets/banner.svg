@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
+  <title id="title">mis-man-ass-ed — Mischief mismanaged</title>
+  <desc id="desc">Neon terminal-inspired banner for the mis-man-ass-ed repository.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#070914"/>
+      <stop offset="0.55" stop-color="#0b1024"/>
+      <stop offset="1" stop-color="#170829"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="0.5" stop-color="#c677ff"/>
+      <stop offset="1" stop-color="#54e6ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#ffffff" opacity="0.018"/>
+    </pattern>
+  </defs>
+
+  <rect width="1500" height="500" rx="24" fill="url(#bg)"/>
+  <rect width="1500" height="500" rx="24" fill="url(#scan)"/>
+  <circle cx="1270" cy="190" r="122" fill="#ff4fd8" opacity="0.12"/>
+  <circle cx="1270" cy="190" r="88" fill="#ff4fd8" opacity="0.15"/>
+  <path d="M1140 360h275" stroke="#54e6ff" stroke-opacity="0.24" stroke-width="2"/>
+  <path d="M1180 345v-135h42v135m20 0V180h55v165m20 0v-95h36v95m18 0V215h31v130" fill="none" stroke="#9d70ff" stroke-opacity="0.42" stroke-width="4"/>
+
+  <text x="70" y="70" fill="#91a0c8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" letter-spacing="5">A HIGHLY QUESTIONABLE OPEN SOURCE PROJECT</text>
+  <text x="70" y="206" fill="url(#neon)" filter="url(#glow)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="800" font-size="112">mis-man-ass-ed</text>
+  <text x="75" y="278" fill="#e7ecff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46">Mischief <tspan fill="#ff4fd8">mismanaged.</tspan></text>
+  <text x="75" y="333" fill="#7f94c6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="27">The natural home of nu.mkv</text>
+
+  <rect x="74" y="381" width="210" height="58" rx="12" fill="#141a34" stroke="#ff4fd8" stroke-opacity="0.7"/>
+  <text x="179" y="418" text-anchor="middle" fill="#f1eaff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">90 ceremonial tests</text>
+
+  <rect x="302" y="381" width="280" height="58" rx="12" fill="#141a34" stroke="#54e6ff" stroke-opacity="0.7"/>
+  <text x="442" y="418" text-anchor="middle" fill="#e6fbff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">all tests passed*</text>
+
+  <rect x="600" y="381" width="230" height="58" rx="12" fill="#141a34" stroke="#9d70ff" stroke-opacity="0.7"/>
+  <text x="715" y="418" text-anchor="middle" fill="#efe7ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">reality optional</text>
+
+  <g transform="translate(1085 322)">
+    <rect x="0" y="0" width="210" height="92" rx="13" fill="#11172d" stroke="#54e6ff" stroke-opacity="0.5"/>
+    <text x="20" y="30" fill="#54e6ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">$ git status</text>
+    <text x="20" y="57" fill="#a5b6df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">nothing to commit,</text>
+    <text x="20" y="79" fill="#ff4fd8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">everything is a problem</text>
+  </g>
+
+  <text x="1110" y="88" fill="#7f94c6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="4">SAME MISTAKES</text>
+  <text x="1110" y="116" fill="#7f94c6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="4">DIFFERENT AESTHETIC</text>
+  <text x="74" y="468" fill="#5f6f9a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">* reality not included</text>
+</svg>
