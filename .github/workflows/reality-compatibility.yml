@@ -1,0 +1,26 @@
+name: Reality Compatibility
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reality:
+    name: compare implementation to reality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Establish preferred reality
+        shell: bash
+        run: |
+          echo 'Expected: everything is fine'
+          echo 'Observed: repository exists'
+
+      - name: Reject observed state
+        shell: bash
+        run: |
+          echo '::error title=Reality regression::Observed state does not match preferred narrative.'
+          exit 1
