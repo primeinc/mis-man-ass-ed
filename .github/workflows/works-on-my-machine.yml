@@ -1,0 +1,24 @@
+name: Works On My Machine
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  provenance:
+    name: identify approved workstation
+    runs-on: windows-latest
+    steps:
+      - name: Verify machine identity
+        shell: pwsh
+        run: |
+          Write-Host "Runner: $env:COMPUTERNAME"
+          Write-Host "Required: WILLS-MACHINE"
+          if ($env:COMPUTERNAME -ne 'WILLS-MACHINE') {
+            Write-Error 'Unsupported computer. Works on my machine.'
+            exit 1
+          }
