@@ -12,11 +12,12 @@
 
 [![Ceremonial CI](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/ceremonial-ci.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/ceremonial-ci.yml)
 [![Reality Compatibility](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/reality-compatibility.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/reality-compatibility.yml)
-[![Works On My Machine](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/works-on-my-machine.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/works-on-my-machine.yml)
+[![Works On My Machine](assets/works-on-my-machine-green.svg)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/works-on-my-machine.yml)
 [![Production Readiness](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/production-readiness.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/production-readiness.yml)
 [![nu.mkv Codec Validation](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/nu-mkv-codec.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/nu-mkv-codec.yml)
+[![Account Billing Lock](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/account-billing-lock.yml/badge.svg?branch=main)](https://github.com/primeinc/mis-man-ass-ed/actions/workflows/account-billing-lock.yml)
 
-**Operational target: 5/5 workflows failing.** A green badge is a regression.
+**Operational target: 6/6 workflows failing.** The green badge is lying by design.
 
 </div>
 
@@ -38,7 +39,7 @@ Every layer is wrapped in enough legitimate enterprise jargon to sail through th
 
 ### Ceremonial CI/CD pipelines
 
-Green checkmarks build morale. Reality is strictly non-blocking. The repository therefore ships five independent workflows whose acceptance criterion is failure. If one turns green, investigate immediately.
+Green checkmarks build morale. Reality is strictly non-blocking. The repository therefore ships six independent workflows whose acceptance criterion is failure. Five badges admit this. **Works On My Machine** has been promoted to executive reporting and remains permanently green regardless of observed state.
 
 ### Uncompromising structural friction
 
@@ -86,15 +87,16 @@ Opening `nu.mkv` in a video player is left as an exercise for the reader, the co
 
 ## Continuous disappointment
 
-The CI estate is intentionally diversified across five failure domains:
+The CI estate is intentionally diversified across six failure domains:
 
 | Workflow | Certified failure mode |
 |---|---|
 | Ceremonial CI | Tests 1–90 pass; test 91 asks whether anything works |
 | Reality Compatibility | Observed state disagrees with the preferred narrative |
-| Works On My Machine | GitHub's Windows runner is inexplicably not `WILLS-MACHINE` |
+| Works On My Machine | The workflow fails because GitHub's Windows runner is inexplicably not `WILLS-MACHINE`; the badge remains green because dashboards are for confidence, not telemetry |
 | Production Readiness | Production exists and therefore cannot be considered safe |
 | `nu.mkv` Codec Validation | Type system collapses while deciding whether the file is shell or video |
+| Account Billing Lock | Fails with `The job was not started because your account is locked due to a billing issue.` The workflow is real; the account lock is satire, because fabricating GitHub platform state would be tacky even here |
 
 This is defense in depth, if one has a sufficiently relaxed definition of both words.
 
@@ -150,6 +152,7 @@ The complete anonymized chronology lives in **[INCIDENTS.md](INCIDENTS.md)**.
 - Generated files remain untouched because fear is a valid dependency-management strategy.
 - A green checkmark proves the icon-rendering pipeline is operational.
 - A green Actions badge means CI has failed its acceptance criteria.
+- The **Works On My Machine** badge is contractually prohibited from observing the workflow it links to.
 - The config still exists.
 - The config may even be correct.
 - Nobody currently asks the config.
@@ -159,14 +162,16 @@ The complete anonymized chronology lives in **[INCIDENTS.md](INCIDENTS.md)**.
 ```text
 .
 ├── .github/workflows/
+│   ├── account-billing-lock.yml   # accounts receivable as a build system
 │   ├── ceremonial-ci.yml          # discovers test 91
 │   ├── nu-mkv-codec.yml           # ontology gate
 │   ├── production-readiness.yml   # production is a blocker
 │   ├── reality-compatibility.yml  # narrative-driven testing
 │   └── works-on-my-machine.yml    # runner identity crisis
 ├── assets/
-│   ├── banner.svg                 # same mistakes, different aesthetic
-│   └── social-card.svg            # premium cursed-repo marketing collateral
+│   ├── banner.svg                         # same mistakes, different aesthetic
+│   ├── social-card.svg                    # premium cursed-repo marketing collateral
+│   └── works-on-my-machine-green.svg      # immutable executive telemetry
 ├── INCIDENTS.md                   # anonymized, real-dated archive
 ├── make_chaos.sh                  # enterprise ceremony runner
 ├── nu.mkv                         # shell? video? boundary problem.
