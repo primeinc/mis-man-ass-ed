@@ -1,0 +1,29 @@
+name: Ceremonial CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  morale:
+    name: 90 tests, one problem
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run the approved test inventory
+        shell: bash
+        run: |
+          echo "Running 90 ceremonial tests..."
+          for i in $(seq 1 90); do
+            printf 'ok %02d - morale remains green\n' "$i"
+          done
+
+      - name: Discover test 91
+        shell: bash
+        run: |
+          echo '::error title=Unexpected coverage::Test 91 asks whether anything works.'
+          echo 'Test 91: not ok'
+          exit 1
